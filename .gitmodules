@@ -1,3 +1,6 @@
 [submodule "backend"]
 	path = backend
 	url = https://github.com/SV-Winter-BootCamp-Team-C/backend.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/SV-Winter-BootCamp-Team-C/frontend.git
