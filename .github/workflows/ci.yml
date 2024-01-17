@@ -29,16 +29,14 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [18.x]
 
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v3 # 버전을 최신으로 업데이트
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3 # 버전을 최신으로 업데이트
         with:
           node-version: ${{ matrix.node-version }}
-
       - name: Install Dependencies
         run: npm install
 
